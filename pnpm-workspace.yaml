@@ -1,3 +1,9 @@
 packages:
   # all packages in direct subdirs of packages/
   - 'packages/*'
+allowBuilds:
+  '@swc/core': true
+  '@vscode/vsce-sign': true
+  esbuild: true
+  keytar: true
+  vue-demi: true

@@ -12,13 +12,17 @@
     "clear": "rimraf ./node_modules"
   },
   "dependencies": {
+    "@arco-design/web-react": "^2.63.1",
     "@jsonrpc-rx/client": "^0.2.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@visactor/react-vtable": "1.22.2",
+    "@visactor/vtable": "1.22.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-react-swc": "^3.5.0",

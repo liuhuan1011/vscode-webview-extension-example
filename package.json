@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "run-p dev:*",
+    "dev": "run-p dev:extension dev:view-react",
     "dev:extension": "pnpm run -F extension watch",
     "dev:view-vue": "pnpm run -F view-vue dev",
     "dev:view-react": "pnpm run -F view-react dev",
@@ -24,7 +24,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.4",
+    "axios": "1.6.4",
     "path-browserify": "^1.0.1"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 {
   "name": "extension",
-  "displayName": "vscode-webview-extension-example",
-  "description": "Vscode 的 extension webview 开发示例，提供 Vue 和 React 实现",
+  "displayName": "Port Management",
+  "description": "基于 React Webview 的端口与信号管理插件",
   "version": "1.0.1",
   "publisher": "liutaigang",
   "engines": {
@@ -59,16 +59,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "panel-view-container.show",
-        "title": "Panel View",
-        "category": "vscode-webview-example"
+        "command": "portManagement.openPort",
+        "title": "打开 Port 管理",
+        "category": "Port Management"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
           "id": "sidebar-view",
-          "title": "sidebar view example",
+          "title": "Port Management",
           "icon": "assets/icon01.svg"
         }
       ]
@@ -77,8 +77,7 @@
       "sidebar-view": [
         {
           "id": "sidebar-view-container",
-          "type": "webview",
-          "name": "sidebar view"
+          "name": "功能导航"
         }
       ]
     }

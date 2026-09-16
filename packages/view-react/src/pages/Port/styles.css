@@ -1,0 +1,132 @@
+.port-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  padding: 20px;
+  gap: 16px;
+  color: var(--vscode-foreground, #1d2129);
+  background: var(--vscode-editor-background, #f2f3f5);
+}
+
+.port-page__header {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.port-page__header .arco-typography,
+.port-panel__title .arco-typography {
+  margin: 0;
+}
+
+.port-split {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--vscode-panel-border, #e5e6eb);
+  border-radius: 8px;
+  background: var(--vscode-editor-background, #fff);
+}
+
+.port-split > .arco-resizebox-split-pane {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.port-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 0;
+  padding: 18px;
+  gap: 14px;
+  overflow: hidden;
+}
+
+.port-panel--left {
+  margin-right: 4px;
+  background: var(--vscode-sideBar-background, #fbfcff);
+}
+
+.port-panel--right {
+  margin-left: 4px;
+  background: var(--vscode-editor-background, #fff);
+}
+
+.port-search {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 120px;
+  flex: 0 0 auto;
+  gap: 10px;
+}
+
+.port-panel__title {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  gap: 12px;
+}
+
+.port-table {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--vscode-panel-border, #e5e6eb);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.port-split .arco-resizebox-trigger {
+  width: 8px;
+  background: var(--vscode-panel-border, #f2f3f5);
+}
+
+.port-split .arco-resizebox-trigger::before {
+  background: var(--vscode-focusBorder, #165dff);
+}
+
+@media (max-width: 820px) {
+  .port-page {
+    padding: 12px;
+  }
+
+  .port-page__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .port-search {
+    grid-template-columns: 1fr;
+  }
+
+  .port-panel {
+    padding: 12px;
+  }
+
+  .port-panel--left {
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+  .port-panel--right {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+
+  .port-split .arco-resizebox-trigger {
+    width: 100%;
+    height: 8px;
+  }
+}

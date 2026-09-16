@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     vscodeWebviewHmr({
+      mode: 'iframe',
       linkDir: './src/assets',
     }),
   ],
